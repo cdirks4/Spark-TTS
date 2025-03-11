@@ -23,7 +23,7 @@ script_dir=$(dirname "$(realpath "$0")")
 root_dir=$(dirname "$script_dir")
 
 # Set default parameters
-device=0
+device="cpu"  # Change to "cpu" instead of -1
 save_dir='example/results'
 model_dir="pretrained_models/Spark-TTS-0.5B"
 text="身临其境，换新体验。塑造开源语音合成新范式，让智能语音更自然。"
