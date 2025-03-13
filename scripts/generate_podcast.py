@@ -5,8 +5,10 @@ import soundfile as sf
 import numpy as np
 from pathlib import Path
 
-# Add the project root to Python path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Fix the Python path to properly include the project root
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(current_dir)
+sys.path.append(project_root)
 
 from cli.SparkTTS import SparkTTS
 
